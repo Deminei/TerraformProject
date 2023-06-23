@@ -28,3 +28,5 @@ Infrastructure Provisioning:
 - Once the configuration is defined, you run the `terraform init` command to initialize the working directory and download the necessary providers.
 - After initialization, you can use the `terraform plan` command to preview the changes Terraform will apply without actually making any changes.
 - Finally, you use the `terraform apply` command to apply the changes and provision the infrastructure based on the configuration.
+
+Resource: https://developer.hashicorp.com/terraform
