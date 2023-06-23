@@ -1,0 +1,32 @@
+Introduction to Ansible:
+- Ansible is an open-source automation tool that allows you to automate the configuration, deployment, and management of systems.
+- It uses a simple and declarative language to describe tasks and configurations, making it easy to learn and use.
+- Ansible operates over SSH, so there is no need to install any agent software on the managed hosts.
+
+Installation:
+- Ansible can be installed on a control node, which is the machine from which you manage other hosts.
+- It can be installed on various operating systems, including Linux, macOS, and Windows.
+- The installation process typically involves installing Python, as Ansible is written in Python, and then using Python's package manager, pip, to install Ansible.
+
+Basic Concepts:
+- Inventory: Ansible uses an inventory file to define the hosts or groups of hosts it will manage. It can be a simple text file or a dynamic script that generates the inventory dynamically.
+- Modules: Ansible tasks are performed using modules, which are standalone scripts that Ansible executes on remote hosts. Modules can be written in any programming language, but most are written in Python.
+- Playbooks: Playbooks are Ansible's configuration, deployment, and orchestration language. They are written in YAML format and describe a set of tasks to be executed on remote hosts.
+- Tasks: Tasks are the individual units of work in Ansible. They define the actions to be taken on the managed hosts.
+- Roles: Roles are a way to organize and reuse playbooks and tasks. They provide a structured and modular approach to managing configurations.
+
+Inventory Management:
+- The inventory file is used to define the hosts and groups that Ansible will manage.
+- Hosts can be specified by their IP addresses or domain names.
+- Groups allow you to organize hosts based on certain criteria, such as their role or location.
+- Inventory files can be static, where hosts and groups are defined manually, or dynamic, where the inventory is generated dynamically using external scripts or cloud providers' APIs.
+
+Playbook Structure:
+- Playbooks are written in YAML format and consist of a set of plays.
+- A play is a collection of tasks that are applied to a specific set of hosts.
+- Each play specifies the hosts or groups it targets, the tasks to be executed, and various optional parameters.
+- Tasks within a play are executed sequentially unless explicitly parallelized.
+- Playbooks can also define variables, handlers (actions triggered by events), and other advanced features for more complex automation scenarios.
+
+Resources: https://docs.ansible.com/ansible/latest/index.html
+https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#control-node-requirements
